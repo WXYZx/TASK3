@@ -1,0 +1,39 @@
+public class main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę x: ");
+        double x = scanner.nextDouble();
+
+        if(x<5){
+            double wynik1 = x-10;
+            System.out.println("Czyli: " + wynik1);
+        }else{
+            int b = 3;
+            double c = 0.7;
+            while(x%b == 0 || x > 11) {
+                c = 20;
+                x = ++c;
+                if (x % 2 == 0) {
+                    double wynik2 = x + 10;
+                    System.out.println("W takim wypadku = " + wynik2);
+                }else if(x % 2 != 0) {
+                double wynik3 = x-10;
+                    System.out.println("W takim wypadku = " + wynik3);
+                break;
+                }
+            }
+            if(x%b == 0 || x > 11){
+                x += c;
+                b = 3;
+                if (x/b == 0 || x > 11){
+                    c = 20;
+                    x = ++c;
+                    if (x % 2 == 0) {
+                        double wynik2 = x + 10;
+                        System.out.println("W takim wypadku = " + wynik2);
+                        }
+                    }
+                }
+            }
+        }
+    }
