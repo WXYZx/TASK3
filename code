@@ -1,4 +1,6 @@
-public class main {
+import java.util.Scanner;
+
+public class main1{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj liczbę x: ");
@@ -17,12 +19,8 @@ public class main {
             while (!(b % 2 == 0 || b > 11)) {
                 x += c;
             }
-            System.out.println("x: "+x);
-            System.out.println("b: "+b);
-            System.out.println();
             b = Math.pow(b, x);
             b = x;
-            System.out.println(x);
             System.out.println();
             if (x % 2 == 0) {
                 System.out.println(x + 10);
