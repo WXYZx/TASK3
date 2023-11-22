@@ -1,23 +1,30 @@
 import java.util.Scanner;
 
-public class main1{
+public class main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj liczbę x: ");
         double x = scanner.nextDouble();
 
-        if (x < 5) {
+        if (x < 5)
+        {
             if (x % 2 == 0) {
                 System.out.println(x + 10);
             } else {
                 System.out.println(x - 10);
             }
-        } else {
+        }else
+        {
             double b = 3 + x;
             float c = 0.7f;
 
-            while (!(b % 2 == 0 || b > 11)) {
+            while (!(x % 2 == 0 || x > 11)) {
                 x += c;
+                x *= 100;
+                x = Math.round(x);
+                x /= 100;
+                System.out.println(x);
+
             }
             b = Math.pow(b, x);
             b = x;
